@@ -1,0 +1,88 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Caçada</title>
+		<style>
+			h1, p{
+				color:red;
+				text-align: center
+			}
+			img{
+				border:black 10px;
+				height: 135px;
+				width: 135px;
+			}
+			div1{
+				height: 40;
+				width: 40px;
+			}
+			body{
+				background-color: black;
+			}
+		</style>
+		<script src="jogo_caca.js"></script>
+	</head>
+
+	<body onload="IniciarJogo()">
+		<h1><i>Seja um caçador!</i></h1>
+        <p><i>clique nos fantasmas para captura-los!</i></p>
+        <div>
+		<div style="float:left; width:auto; height:450px; margin-right: 5px; background: green; border: solid 10px green">
+			<table>
+				<tr>
+					<td>
+						<img src="img/fantasma.png">
+					</td>
+					<td>
+						<span id="fan" style="font-size: 40px"></span>
+					</td>
+				</tr>
+			</table>
+
+			<br>
+
+			<table>
+				<tr>
+					<td>
+						<img src="img/fantasmaCap.png">
+					</td>
+					<td>
+						<span id="fancap" style="font-size: 40px"></span>
+					</td>
+				</tr>
+			</table>
+
+			<table style="width:140px; height:132px;">
+				<tr>
+					<td style="background: src('img/relogio.png'); text-align: center" src="img/relogio">
+						<span id="tempoJogo" style="color: red; font-size: 90px"></span>
+					</td>
+					<td>
+						<span id="tempoJogo" style="font-size: 40px"></span>
+					</td>
+				</tr>
+			</table>
+		</div>
+<div id="cenario" style="float:left; width:900px; height:700px; background: url('img/cenario.png'); background-position: bottom;"></div>
+		<div1 style="float:left; width:auto; height:420px; margin-right: 5px; background: black; border: solid 10px green">
+			<table>
+				<tr>
+				<td>
+					<img src="img/joinha.gif">
+				</td>
+			</tr>
+			</tr>
+			<tr>
+				<td>
+					<img src="img/dancinha.gif">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<img src="img/piscadinha.gif">
+				</td>
+			</tr>
+		</table>
+		</div1>
+	</body>	
+</html>

@@ -1,0 +1,141 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <script src="jquery-3.3.1.js"></script>
+        <style>
+            h1
+            {
+                text-align: center;
+                color: red;
+            }
+            h2
+            {
+                color: red;
+                border: 5px solid green;
+                
+            }
+            p
+            {
+                
+                color:red;
+                    
+            }        
+            body{
+                background-color: black;
+            }
+
+            .content td{
+                text-align: center;
+                width: 600px;
+            }
+            .btnT td{
+                height: 100px;
+            }
+
+            #jumpscare{
+                top: 0px;
+                left: 0px;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                visibility: hidden;
+                cursor: pointer;
+            }
+        </style>
+        <script>
+            $(document).ready(function()
+            {
+                $("#bot2").click(function(){window.open("monstros_demonios.html.html"); });
+            });
+        
+        </script>
+        <script> function CarregarJogo(){
+            var dificuldade = document.getElementById("nivelDificuldade").value;
+            window.location.href="jogo_caça.html.html?" + dificuldade;
+        }
+        </script>
+        <script src="jogo_caça.js"></script>
+
+        <script>
+
+            function jumpScare(){
+
+                var jumpscare = document.getElementById("jumpScare");
+                jumpscare.style.visibility="visible";
+                var susto = document.getElementById("susto");
+
+                susto.play();
+            };
+
+            function sairJump(){
+
+                var imgJump = document.getElementById("jumpScare");
+                imgJump.style.visibility="hidden";
+
+            };
+
+        </script>
+        <title>SUPERNATURAL</title>
+    </head>
+    <body>
+        
+        <h1>Supernatural</h1>
+        <table class="content" align="center">
+            <tr>
+                <td>
+                    <h2>Monstros</h2>
+                </td>
+                    <td >
+                        <h2>Demonios</h2>
+                    </td>
+                    <td>
+                        <h2>Joguinho</hr2>
+                    </td>   
+            <tr>                            
+            <tr>
+            <td>
+                <p>Estes são alguns monstros da série Supernatural,
+                    dentre eles está <b>Wendigo, Metamorfo e Raxasa</b></p>
+            </td>
+            <td >
+                <p>Aqui você encontra alguens demônios da série! 
+                    E sim são vários, mas irei listar apenas três 
+                    como <b>Ceifador, Tengu e Jinn</b>.</p>
+                </td>
+            <td >
+                <p>Clique no botão para jogar o jogo de caça com <b>Castiel</b> e os <b>irmãos Winchester</b> </p>
+            </td>
+        </tr>
+        <tr id="imagesJQ">
+            <td>
+                <img style="width: 300px; height: 300px;" src="img/monstro.jpg">
+            </td>
+            <td>
+                <img style="width: 300px; height: 300px;" src="img/simbolo.jpg">
+            </td>
+            <td>
+                <img style="width: 300px; height: 300px;" src="img/joinha.gif">
+            </td>
+        </tr>
+        <tr id="botaoI" class="btnT">
+            <td><button onclick="jumpScare()" id="pegadinha">Monstros</button></td> <!-- botão que aciona o jumpScare-->
+            <td><button id="bot2">Demônios</button></td>
+            <td><button onclick="CarregarJogo()"id="bot3">Joguinho </button>
+                <div style="margin: auto; width: 200px">
+                    <p>
+                        <b>Nível: </b>
+                        <select id="nivelDificuldade">
+                            <option value="1">Fácil</option>
+                            <option value="2">Normal</option>
+                            <option value="3">Difícil</option>
+                        </select>
+                    </p>
+                    <br>
+                </div></td>
+            
+        </tr>
+        </table>
+        <img onclick="sairJump()" id="jumpScare" src="img/deansendodean.jpg"> <!--imagem do jumpScare-->
+        <audio id="susto" src="grito.mp3"></audio>  <!--audio do jump scare tem que adiocionar em alguma pasta do site-->
+    </body>
+</html>

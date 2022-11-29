@@ -1,0 +1,135 @@
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <script src="jquery-3.3.1.js"></script>
+        <style>
+            h1
+            {
+                text-align: center;
+                color: red;
+            }
+            h2
+            {
+                color: red;
+                border: 5px solid green;
+                
+            }
+            p
+            {
+                
+                color:red;
+                    
+            }        
+            body{
+                background-color: black;
+            }
+
+            .content td{
+                text-align: center;
+                width: 600px;
+            }
+            .btnT td{
+                height: 100px;
+            }
+        </style>
+        <script>
+            $(document).ready(function()
+            {
+                $("p").hide(function()
+                {
+
+                });
+                $('#wendigo').click(function(){
+                    $("#wen").slideToggle();
+                });
+                $("#ceifador").click(function()
+                {
+                    $("#cei").slideToggle();
+                });
+                $("#metamorfo").click(function(){
+                    $("#met").slideToggle();
+                });
+                $("#tengu").click(function()
+                {
+                    $("#ten").slideToggle();
+                });
+                $("#raxasa").click(function()
+                {
+                    $("#rax").slideToggle();
+                });
+                $("#djinn").click(function()
+                {
+                    $("#dji").slideToggle();
+                });
+            });
+        </script>
+        <title>MONTROS E DEMÔNIOS</title>
+    </head>
+    <body>
+        
+        <h1>MONTROS E DEMÔNIOS</h1>
+        <table class="content" align="center">
+            <tr>
+                <td>
+                    <h2><i>WENDIGO</i></h2>
+                </td>
+                    <td >
+                        <h2><i>CEIFADOR</i></h2>
+                    </td>
+                    <td>
+                        <h2><i>METAMORFO</i></hr2>
+                    </td>   
+                </tr>                            
+        <tr id="imagesJQ">
+            <td>
+                <img style="width: 300px; height: 300px;" src="img/wendigo.jpg" >
+                <p id="wen">Wendigos foram uma vez seres humanos , mas depois de ser forçado a comer carne humana para sobreviver, eles se tornam monstros sobrenaturais que mantêm pequenos recursos humanos, uma vez que eles possuíam. Depois de sua transformação, eles começam a almejar carne humana e alimentos para animais apenas sobre ele.</p>
+            </td>
+            <td>
+                <img style="width: 300px; height: 300px;" src="img/ceifador.jpg">
+                <p id="cei">Ceifeiros são filhos da morte. Eles ajudam na manutenção da ordem natural, e são completamente neutros, não estando aliados ao céu ou ao inferno. De acordo com Castiel (persnagem da série)   , Ceifeiros, às vezes, aparecem em manifestações em massa no prelúdio de um desastre tão grande como a erupção do Monte Vesúvio, em Pompéia.</p>
+            </td>
+            <td>
+                <img style="width: 300px; height: 300px;" src="img/Metamorfo.jpg">
+                <p id="met">Metamorfos são uma raça de criaturas sobrenaturais que podem assumir a forma de qualquer outra pessoa.</p>
+            </td>
+        </tr>
+        <tr id="botaoI" class="btnT">
+            <td><button id="wendigo">descrição</button></td>
+            <td><button id="ceifador">descrição</button></td>
+            <td><button id="metamorfo">descrição </button></td>
+        </tr>
+        <tr>
+            <td>
+                <h2><i>TENGU</i></h2>
+            </td>
+                <td >
+                    <h2><i>RAXASA</i></h2>
+                </td>
+                <td>
+                    <h2><i>DJINN</i></hr2>
+                </td>   
+            </tr> 
+            <tr id="imagesJQ">
+                <td>
+                    <img style="width: 300px; height: 300px;" src="img/tengu.jpg">
+                    <p id="ten">Esse é demonio das montanhas japonesas é conhecido por enganar viajantes e por possuir arrogantes e orgulhosos, os quais o tengu pode enlouquecer ou até mesmo matar. Eles se apossam de corpos de mulheres na tentiva de seduzir homens.</p>
+                </td>
+                <td>
+                    <img style="width: 300px; height: 300px;" src="img/Demon_Yakshagana.jpg">
+                    <p id="rax">Nasceram de um mito hindu, no qual são narrados como demônios do caos. Eles atrapalham rituais de sacrifício, desonram túmulos, comem pessoas e podem mudar de forma assumindo forma humana ou de uma grande ave, sem falar do poder de invisibilidade e reanimar mortos.</p>
+                </td>
+                <td>
+                    <img style="width: 300px; height: 300px;" src="img/Djinn.jpg">
+                    <p id="dji">Os Djinns não concedam verdadeiros desejos, em vez disso eles envenenam suas vítimas e cria uma realidade alternativa. A vítima é presa dentro dessa ''realidade'' e acaba acreditando que a alucinação é o seu sonho em realidade. Ao mesmo tempo, sem que a vítima perceba, o djinn se alimenta do sangue.</p>
+                </td>
+            </tr>
+        <tr id="botaoI" class="btnT">
+            <td><button id="tengu">descrição</button></td>
+            <td><button id="raxasa">descrição</button></td>
+            <td><button id="djinn">descrição </button></td>
+        </tr>
+        </tr>
+    </body>
+</html>
